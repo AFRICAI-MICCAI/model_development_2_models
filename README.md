@@ -1,11 +1,20 @@
 # AFRICAI/MICCAI AI in Medical Imaging in Africa Summer School - 2023
 Materials for the 1st AFRICAI Summer School session for the session
-"Model Development 1: Model-centric best practices and common pitfalls and open access infrastructures". 
+"Model Development 2: Model-centric best practices and common pitfalls and open access infrastructures". 
 For more information, see the AFRICAI website: https://africai.org/summer-school/. 
 
+Open access infrastructures (Martijn) 
+ 
 # 1. Open Access infrastructures
+*Open source* in software development refers to the practice of making the source code of a project available to the public to be used, modified, and redistributed.
+
+*Infrastructure* incompasses everything from frameworks to platforms, libraries, toolboses and notebook environments.
+
+
+The LF AI & Data landscape explores open source projects in Artificial Intelligence and Data and their respective sub-domains. More information can be found here. https://landscapeapp.cncf.io/lfai/
 
 # 2. AI Toolboxes
+Several open source/open access AI toolboxes are available for deep-learning projects. 
 
 # 3. MONAI
 
@@ -15,7 +24,7 @@ For more information, see the AFRICAI website: https://africai.org/summer-school
 
 # 6. Processing
 Given that we have our dataset ready and at hand and have our preprocessing and AI algorithm,
-we nned a compute power to run the analysis. 
+we need a compute power to run the analysis. 
 Eg-
 Google collab: is a free notebook environment that runs entirely in the cloud.
 https://colab.research.google.com/drive/16pBJQePbqkz3QFV54L4NIkOn1kwpuRrj#scrollTo=BCmeo64HcLfs
