@@ -18,6 +18,10 @@ Several open source/open access AI toolboxes are available for deep-learning pro
 
 # 3. MONAI
 
+Is a open-source framework built for accelerating research and clinical collaboration in medical imaging. It provides a comprehensive set of tools and utilities for deep learning applications in medical image analysis. Developed with a focus on flexibility and ease of use, MONAI simplifies the process of building, training, and evaluating deep learning models for tasks like image segmentation, classification, and registration. Unlike general-purpose deep learning libraries, MONAI is tailored specifically for medical imaging tasks and offers a standardized and efficient framework.
+
+Aside from the tutorial provide here, we would also recommend checking out their in depth tutorials on how to use it for various medical imaging tasks. https://github.com/Project-MONAI/tutorials/tree/main 
+
 # 4. Monitoring
 
 # 5. Model and hyperparameter selection
