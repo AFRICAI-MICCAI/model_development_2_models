@@ -2,9 +2,21 @@
 
 <img src="Images/AFRICAI_banner.jpg" alt="Overview"/>
 
-Materials for the 1st AFRICAI Summer School session for the session
-"Model Development 2: Model-centric best practices and common pitfalls and open access infrastructures". 
-For more information, see the AFRICAI website: https://africai.org/summer-school/. 
+Materials for the 1st AFRICAI Summer School session for the session "Model 
+Development 2: Model-centric best practices and common pitfalls and open 
+access infrastructures". For more information, see the AFRICAI website: 
+https://africai.org/summer-school/.
+
+The [slides](https://github.com/AFRICAI-MICCAI/model_development_2_models/blob/main/Slides_model_development_2_models.pdf) for this session can be found in the main folder.
+You can find five Jupyter notebooks in the ``Notebooks`` folder:
+
+- 2- custom-DL-PyTorch-TorchIO-[optional].ipynb
+- 2- TorchIO_MONAI_PyTorch_Lightning-[optional].ipynb
+- **3- MONAI.ipynb (main notebook)**
+- 4-MONAI_MLFlow-[optional].ipynb
+- 7- Pretrained-Models-MONAI_Model_Zoo-[optional].ipynb
+
+The ``3- MONAI.ipynb (main notebook)`` is the main notebook of this session, hence we recommend to start with that one.
  
 # 1. Open Access infrastructures
 *Open source* in software development refers to the practice of making the source code of a project available to the public to be used, modified, and redistributed.
@@ -13,7 +25,7 @@ For more information, see the AFRICAI website: https://africai.org/summer-school
 
 The LF AI & Data landscape explores open source projects in Artificial Intelligence and Data and their respective sub-domains. More information can be found here. https://landscapeapp.cncf.io/lfai/. 
 
-Specifically in medical imaging, important (European) research infrastructres (RIs) are [Euro-BioImaging](https://www.eurobioimaging.eu/), [ERIC](https://research-and-innovation.ec.europa.eu/strategy/strategy-2020-2024/our-digital-future/european-research-infrastructures/eric_en), and (EOSC)[https://eosc-portal.eu/]. The EU also has a strategic roadmap on RIs: https://www.esfri.eu/. See the slides for further information: no notebooks on this topics are provided.
+Specifically in medical imaging, important (European) research infrastructres (RIs) are [Euro-BioImaging](https://www.eurobioimaging.eu/), [ERIC](https://research-and-innovation.ec.europa.eu/strategy/strategy-2020-2024/our-digital-future/european-research-infrastructures/eric_en), and [EOSC](https://eosc-portal.eu/). The EU also has a strategic roadmap on RIs: https://www.esfri.eu/. See the slides for further information: no notebooks on this topics are provided.
 
 # 2. AI Toolboxes
 Several open source/open access AI toolboxes are available for deep-learning projects. Some of the most Python popular solutions in medical imaging are:
@@ -44,6 +56,7 @@ you the basics on how to use MONAI. Specifically, demonstrated features include:
 Other relevant training materials:
 - Tutorials from MONAI itself: https://github.com/Project-MONAI/tutorials/tree/main 
 - The most recent MONAI bootcamp: https://github.com/Project-MONAI/monai-bootcamp, and also the video recordings at https://www.youtube.com/playlist?list=PLtoSVSQ2XzyAJAGzaHF0nUIkav0BnxhrJ. For the 2021 bootcamp, see https://github.com/Project-MONAI/MONAIBootcamp2021.
+- MONAI includes various public datasets, including a plugin to download TCIA datasets, see https://docs.monai.io/en/stable/apps.html. 
 
 # 4. Monitoring
 Various tools can be used to monitor your models during training, but also archive them in an organised way after training. 
@@ -54,16 +67,30 @@ Various tools can be used to monitor your models during training, but also archi
 We will focus on MLFlow, as it comes as part of the MONAI installation. We have included an optional [notebook](https://github.com/AFRICAI-MICCAI/model_development_2_models/blob/main/Notebooks/4-MONAI_MLFlow-[optional].ipynb) in this repository. See another example in the MONAI tutorials (https://github.com/Project-MONAI/tutorials/blob/main/experiment_management/spleen_segmentation_mlflow.ipynb).
 
 # 5. Model and hyperparameter selection
-TO ADD APOSTOLIA
+Selecting hyperparameters can heavily influence performance. Hyperparameters can either be optimized (time-consuming, but may increase performance), logically motivated (difficult, but efficient) or experimentally observed if you only have a limited set of options. 
+
+Hyperparameter optimization is a field on it's own, and generally
+beyond the scope of this course. To help you out a bit, we advise you the following:
+
+- Check the nnUnet paper (https://doi.org/10.1038/s41592-020-01008-z), which does not do any hyperparameter optimization, but still dominated
+    the leaderboards of segmentation challenges by making some logical choices and simple decision rules based on a datasets characteristics. 
+    This may help you in figuring out good hyperparameter settings for your datasets 
+- To easily sweep through a range of hyperparameters in pytorch, you can use [wandb's sweep](https://wandb.ai/site/articles/hyperparameter-tuning-as-easy-as-1-2-3),
+    or [scikit-learns gridsearch or randomsearch options](https://machinelearningmastery.com/how-to-grid-search-hyperparameters-for-pytorch-models/).
+- For a more in depth overview of hyperparameter tuning, checkout [this blog](https://neptune.ai/blog/hyperparameter-tuning-in-python-complete-guide).
+
+Remember: never use your test set for anything besides testing, so also not for hyperparameter optimization! For this session of the summer school,
+we have included a short exercise on hyperparameters in the main notebook.
 
 # 6. Processing
 For model training, we need a compute power to run the analysis, i.e., GPUs. Google Colab is fine for small (educational)
 experiments, but does not provide a lot of GPU space and limited time. Some environments we would advice to use instead:
 
-- Amazon Web Services (AWS):
-- Microsoft Azure
+- [Amazon Web Services (AWS)](https://aws.amazon.com/)
+- [Microsoft Azure](https://azure.microsoft.com/nl-nl)
+- [Google Cloud](https://cloud.google.com/)
 
-Note that most of these environments are not free, but some allows educational accounts depending on your university. Also,
+Note that these services are not free, but some allows educational accounts depending on your university. Also,
 some of the research infrastructures mentioned in the slides may offer some resources.
 See the slides for further information: no notebooks on this topics are provided.
 
