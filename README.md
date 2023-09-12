@@ -8,7 +8,7 @@ access infrastructures". For more information, see the AFRICAI website:
 https://africai.org/summer-school/.
 
 The [slides](https://github.com/AFRICAI-MICCAI/model_development_2_models/blob/main/Slides_model_development_2_models.pdf) for this session can be found in the main folder.
-You can find five Jupyter notebooks in the ``Notebooks`` folder:
+You can find five Jupyter notebooks in the *Notebooks* folder:
 
 - 2- custom-DL-PyTorch-TorchIO-[optional].ipynb
 - 2- TorchIO_MONAI_PyTorch_Lightning-[optional].ipynb
@@ -16,7 +16,7 @@ You can find five Jupyter notebooks in the ``Notebooks`` folder:
 - 4-MONAI_MLFlow-[optional].ipynb
 - 7- Pretrained-Models-MONAI_Model_Zoo-[optional].ipynb
 
-The ``3- MONAI.ipynb (main notebook)`` is the main notebook of this session, hence we recommend to start with that one.
+``3- MONAI.ipynb`` is the main notebook of this session, corresponding to topic 3, hence we recommend to start with section 3 and this notebook.
  
 # 1. Open Access infrastructures
 *Open source* in software development refers to the practice of making the source code of a project available to the public to be used, modified, and redistributed.
@@ -106,10 +106,10 @@ with the pretrained model weights. They may therefore result in both an efficien
 Containerization means bundling your software solution (e.g., trained model) in a deployable container to allow running it on any system without
 requiring to install all kind of software. Popular solutions are:
 
-- Docker, see also the Docker on MONAI at https://hub.docker.com/r/projectmonai/monai.
-- Kubernetes, which MONAIs Inference Service also uses, see https://github.com/Project-MONAI/monai-deploy-app-server/blob/main/components/inference-service/README.md.
+- Docker, see also the Docker on MONAI at https://hub.docker.com/r/projectmonai/monai. 
+- Kubernetes, which MONAIs Inference Service Deploy also uses, see https://github.com/Project-MONAI/monai-deploy-app-server/blob/main/components/inference-service/README.md.
 
-This only becomes relevant at the deployment stage, or when benchmarking as many challenges also make use of containers to use your algorithm. Hence if you want to use your model in other hospitals or in a federated learning setting, consider making use of these services. See the slides for further information: no notebooks on this topics are provided.
+This only becomes relevant at the deployment stage, or when benchmarking as many challenges also make use of containers to use your algorithm. Hence if you want to use your model in other hospitals or in a federated learning setting, consider making use of these services. While Docker has become the standard for containerization, Kubernetes is gaining ground and becoming a standard especially for executing containers as cloud service, also facilitating running Docker containers. See the slides for further information: no notebooks on this topics are provided.
 
 # Contact
 Coordinators:
