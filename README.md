@@ -64,7 +64,7 @@ Various tools can be used to monitor your models during training, but also archi
 - MLFlow (https://mlflow.org/), a model agnostic toolkit with a wide support of AI toolboxes. 
 - Tensorboard (https://www.tensorflow.org/tensorboard), developed by Tensorflow, but compatible with some other toolboxes. 
 
-We will focus on MLFlow, as it comes as part of the MONAI installation. We have included an optional [notebook](https://github.com/AFRICAI-MICCAI/model_development_2_models/blob/main/Notebooks/4-MONAI_MLFlow-[optional].ipynb) in this repository. See another example in the MONAI tutorials (https://github.com/Project-MONAI/tutorials/blob/main/experiment_management/spleen_segmentation_mlflow.ipynb).
+We will focus on MLFlow, as it comes as part of the MONAI installation. We have included an optional [notebook](https://github.com/AFRICAI-MICCAI/model_development_2_models/blob/main/Notebooks/4-MONAI_MLFlow-[optional].ipynb) in this repository.
 
 # 5. Model and hyperparameter selection
 Selecting hyperparameters can heavily influence performance. Hyperparameters can either be optimized (time-consuming, but may increase performance), logically motivated (difficult, but efficient) or experimentally observed if you only have a limited set of options. 
